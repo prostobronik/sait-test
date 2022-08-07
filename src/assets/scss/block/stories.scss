@@ -1,0 +1,87 @@
+.stories {
+   display: grid;
+   column-gap: 4rem;
+   row-gap: 4.8rem;
+   grid-template-columns: 360px 360px 360px;
+   grid-template-rows: 459px 459px 459px;
+
+   position: absolute;
+   left: 37rem;
+   top: 39.9rem;
+
+}
+
+.paragre {
+   width: 360px;
+   height: 80px;
+   margin-top: 1.6rem;
+
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 20px;
+   color: $gray;
+}
+
+.content-plus {
+   width: 360px;
+   height: 213px;
+   margin-top: 1.6rem;
+   font-family: 'Roboto';
+   font-style: normal;
+
+   .life {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: $red;
+   }
+   .zagolovok {
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: $black; 
+      margin-top: 1.6rem; 
+   }
+   .avtor{
+      margin-top: 1.6rem;
+      .span-one{
+         font-weight: 500;
+         font-size: 1.2rem;
+         line-height: 12px;
+         color: $black;
+      }
+      .span-tu {
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 12px;
+         color: $grey_span;
+      }
+   
+   }
+}
+
+//Адаптивный дизайн
+
+@media (max-width: 820px) {
+   .stories {
+      display: grid;
+      column-gap: 4rem;
+      row-gap: 4.8rem;
+      grid-template-columns: 360px 360px;
+      grid-template-rows: 459px 459px;
+   }
+
+   
+}
+
+
+@media (max-width: 565px) {
+   .stories {
+      display: grid;
+
+      grid-template-columns: 360px;
+      grid-template-rows: 459px;
+   }
+
+}
+

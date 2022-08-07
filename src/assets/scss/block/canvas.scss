@@ -1,0 +1,118 @@
+.canvas {
+   position: absolute;
+   width: 320px;
+   height: 810px;
+   left: 0px;
+   top: -1px;
+
+   display: none;
+
+   background-color: $white;
+   z-index: 10;
+   border-right: 1px solid $grey_line;
+}
+
+.logotyp-one{
+   position: absolute;
+   width: 180.83px;
+   height: 26.6px;
+   left: 3.0rem;
+   top: 2.8rem;
+}
+
+a {
+   text-decoration: none;
+   color: $black;
+}
+
+.menu-canvas {
+   display: block;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 32px;
+
+   position: absolute;
+   width: 260px;
+   height: 268px;
+   left: 3rem;
+   top: 11.2rem;
+
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1.6rem;
+   line-height: 16px;
+   
+}
+
+.dws-menu-canvas > ul li a {
+   display: block;
+   padding-bottom: 33px;
+}
+
+
+////Псевдоэлементы линии
+.canvas-a::before{
+   width: 260px;
+   content: "";
+   position: absolute;
+   border-bottom: 1px solid $grey_line;
+   bottom: 88%;
+}
+.canvas-b::before{
+   width: 260px;
+   content: "";
+   position: absolute;
+   border-bottom: 1px solid $grey_line;
+   bottom: 70%;
+}
+.canvas-c::before{
+   width: 260px;
+   content: "";
+   position: absolute;
+   border-bottom: 1px solid $grey_line;
+   bottom:52%;
+}
+.canvas-d::before{
+   width: 260px;
+   content: "";
+   position: absolute;
+   border-bottom: 1px solid $grey_line;
+   bottom: 33%;
+}
+.canvas-e::before{
+   width: 260px;
+   content: "";
+   position: absolute;
+   border-bottom: 1px solid $grey_line;
+   bottom: 15%;
+}
+
+
+//Адаптивная верстка
+
+@media (max-width:820px) {
+
+   //Выезжающее меню
+   .canvas {
+      display: block;
+      top: 0;
+      bottom: 0;
+      width: 300px;
+      left: -340px;
+      transition: transform .3s ease-in-out;
+
+   }
+
+   #canvas:target {
+      transform: translateX(340px);
+   }
+
+}
+
+
+
+
+
+
