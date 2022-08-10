@@ -19,7 +19,7 @@
    top: -60px;
    transform: translateY(-100%);
 }
- 
+
 
 //Горизонтальные линии
 .line_one {
@@ -38,7 +38,7 @@
    border: 1px solid $grey_line;
 }
 
-.line_onetu{
+.line_onetu {
    position: absolute;
    width: 320px;
    left: 0rem;
@@ -107,19 +107,20 @@ a {
    line-height: 16px;
 
 }
-.menu-one{
+
+.menu-one {
    height: 50px;
    z-index: 4;
 }
 
-.dws-menu > ul li a {
+.dws-menu>ul li a {
    display: block;
 }
 
 .dws-menu li ul {
    position: absolute;
    min-width: 150px;
-   top:3.7rem;
+   top: 3.7rem;
    display: none;
    z-index: 5;
    width: 176px;
@@ -127,8 +128,8 @@ a {
    border: 1px solid $grey_line;
    border-top: 0;
    background-color: $white;
-   
-   .lin-a{
+
+   .lin-a {
       margin-top: 12px;
    }
 }
@@ -145,11 +146,11 @@ a {
    right: 2.133rem;
 }
 
-.dws-menu li > ul li a {
+.dws-menu li>ul li a {
    top: calc(50% - 13px/2);
 }
 
-.dws-menu li:hover > ul {
+.dws-menu li:hover>ul {
    display: block;
 }
 
@@ -157,32 +158,35 @@ a {
    width: 200px;
    color: #969696;
    transition: all 0.3s ease;
-   transform: translate(8px,0)
+   transform: translate(8px, 0)
 }
 
 //Псевдо-элементы
-.lin-a::before{
+.lin-a::before {
    width: 135px;
    content: "";
    position: absolute;
    border-bottom: 1px solid $grey_line;
    bottom: 76%;
 }
-.lin-b::before{
+
+.lin-b::before {
    width: 135px;
    content: "";
    position: absolute;
    border-bottom: 1px solid $grey_line;
    bottom: 58%;
 }
-.lin-c::before{
+
+.lin-c::before {
    width: 135px;
    content: "";
    position: absolute;
    border-bottom: 1px solid $grey_line;
-   bottom:41%;
+   bottom: 41%;
 }
-.lin-d::before{
+
+.lin-d::before {
    width: 135px;
    content: "";
    position: absolute;
@@ -193,32 +197,27 @@ a {
 
 //Адаптивная верстка
 
-@media (max-width: 820px){
+@media (max-width: 820px) {
 
-   .logotyp{
+   .logotyp {
       display: none;
    }
-   .dws-menu{
+
+   .dws-menu {
       display: none;
    }
 
    .canvas {
       position: relative;
    }
-   .open{
+
+   .open {
       position: absolute;
-      float: left;
-      z-index: 10;
+      right: 10px;
+      width: 23px;
+      height: 16px;
+      left: 2rem;
+      top: 2rem;
    }
 
 }
-
-
-
-
-@media (max-width: 565px){
-
-
-  
-}
-

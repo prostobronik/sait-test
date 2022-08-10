@@ -69,9 +69,12 @@
       row-gap: 4.8rem;
       grid-template-columns: 360px 360px;
       grid-template-rows: 459px 459px;
-   }
 
-   
+      position: absolute;
+      left: 0;
+      top: 0;
+   }
+  
 }
 
 
@@ -81,6 +84,11 @@
 
       grid-template-columns: 360px;
       grid-template-rows: 459px;
+
+      position: absolute;
+      
+      left: 0;
+      top: 0;
    }
 
 }
